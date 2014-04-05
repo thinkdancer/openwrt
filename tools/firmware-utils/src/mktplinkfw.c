@@ -186,6 +186,19 @@ static struct flash_layout layouts[] = {
 		.kernel_la	= 0x80060000,
 		.kernel_ep	= 0x80060000,
 		.rootfs_ofs	= 0x100000,
+      /*gengxiuli,2014-04-05,Add 16M support*/
+        }, {
+                .id             = "16M",
+                .fw_max_len     = 0xf80000,
+                .kernel_la      = 0x80060000,
+                .kernel_ep      = 0x80060000,
+                .rootfs_ofs     = 0x140000,
+        }, {
+                .id             = "16Mlzma",
+                .fw_max_len     = 0xf80000,
+                .kernel_la      = 0x80060000,
+                .kernel_ep      = 0x80060000,
+                .rootfs_ofs     = 0x100000,
 	}, {
 		.id		= "16Mppc",
 		.fw_max_len	= 0xf80000,
