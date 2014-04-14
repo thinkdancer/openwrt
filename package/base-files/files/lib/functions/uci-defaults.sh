@@ -166,6 +166,7 @@ set network.$cfg.proto='none'
 EOF
 }
 
+ # gengxiuli,2014-04-15,make lan default ip（19）.
 ucidef_set_interface_lan() {
 	local ifname=$1
 
@@ -174,7 +175,7 @@ set network.lan='interface'
 set network.lan.ifname='$ifname'
 set network.lan.type='bridge'
 set network.lan.proto='static'
-set network.lan.ipaddr='192.168.1.1'
+set network.lan.ipaddr='192.168.19.1'
 set network.lan.netmask='255.255.255.0'
 set network.lan.ip6assign='60'
 EOF
